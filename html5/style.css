@@ -1,0 +1,8 @@
+.btn{
+    background: green;
+    color: white;
+}
+
+.fondo{
+    background-image: linear-gradient(to right,red,blue,green);
+}
