@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Mis Pagos</title>
- <link rel="stylesheet" href="bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Pagos</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 
 <body>
@@ -19,31 +19,93 @@
             <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                 <div class="card">
                     <div class="card-header">
-                    Carga de pago
+                         <div class="mb-3">
+                           Carga de pago
+                         </div>
                     </div>
-                    
-                    </div> 
-                    <button class="btn btn-success">Guardar Pago</button>
+                    <form class="form-label" >
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                       <div class="mb-3">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre">
+                                       </div>
+                                    </div>                             
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese apellido">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                    <label for="dni">Dni</label>
+                                    <input type="text" class="form-control" id="dni" placeholder="Ingrese Dni">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                    <label for="correo">Correo</label>
+                                    <input type="email" class="form-control" id="correo" placeholder="Ingrese correo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                    <label for="cuota">Cuota</label>
+                                    <input type="text" class="form-control" id="cuota" placeholder="Ingrese cuota">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                    <label for="importe">Importe</label>
+                                    <input type="text" class="form-control" id="importe" placeholder="Ingrese importe">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="mb-3">
+                            <label for="fecha de pago">Fecha de Pago</label>
+                            <input type="text" class="form-control" id="fecha de pago" placeholder="Ingrese Fecha">
+                            </div>
+                        </div> 
+                        <div class="form-group">
+                            <div class="mb-3">
+                            <button class="btn btn-success">Guardar Pago</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-
-            <div class="col-lg-8 cold-md-8 col-sm-8 col-8">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                 <div class="mb-3">
                     <div class="card">
                         <div class="card-header">
-                        Grilla pagos
+                            Grilla pagos
                         </div>
                         <div class="card-body">
                             <table class="table">
                                 <thead>
-                                <tr>
-                                    <th>Nombre</th>
-                                    <th>Apellido</th>
-                                    <th>DNI</th>
-                                    <th>Correo</th>
-                                    <th>Cuota</th>
-                                    <th>Importe</th>
-                                    <th>Fecha</th>
-                                </tr>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>DNI</th>
+                                        <th>Correo</th>
+                                        <th>Cuota</th>
+                                        <th>Importe</th>
+                                        <th>Fecha</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
@@ -68,7 +130,7 @@
                                         <td>Antonio</td>
                                         <td>Fernández</td>
                                         <td>30221144</td>
-                                        <td>juanperez@gmail.com</td>
+                                        <td>antoniofernandez@gmail.com</td>
                                         <td>11</td>
                                         <td>$45000</td>
                                         <td>05/11/2021</td>
@@ -78,12 +140,9 @@
                         </div>
                     </div>
                 </div>
-    
-            </div>   
-
+            </div>
         </div>
     </div>
     
 </body>
-
 </html>
