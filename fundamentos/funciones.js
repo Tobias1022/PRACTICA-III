@@ -23,6 +23,5 @@ function cambiar_label(){
         label.textContent = "option2"
     }
 
-
 }
 
