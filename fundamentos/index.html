@@ -7,6 +7,9 @@
 </head>
 
 <body>
+
+    <div class="container">
+
   <select onchange="cambiar_label()"slt_operation">
   <option value="0">Opción 1</option>
   <option value="1">Opción 2</option>
@@ -16,6 +19,30 @@
   <input id="inp_dato" type="text">
   <button id="btn_ejecutar">Aceptar</button>
 
+  <div class="row">
+    <div class="col-lg-6">
+      <ul id="list_users" class="list-group">
+       </ul>
+    </div>
+      <div class="col-lg-6">
+      <table class="table">
+          <thead>
+           <tr>
+            <th>N°</th>
+            <th>Nombre</th>
+            <th>Usuario</th>
+            <th>Correo</th>
+            <th>Sitio Web</th>
+           </tr>
+  
+          </thead>
+          <tbody id="tb_users">
+  
+  
+           </tbody>
+        </table>
+    </div>
+  </div>
 
   <script src="arreglos.js"></script>
   <script src="variables_constantes.js"></script>
@@ -25,6 +52,10 @@
   <script src="array_de_objetos.js"></script>
   <script src="funcion_flecha.js"></script>
   <script src="fetch_api.js"></script>
+  <link rel="stylesheet" href="bootstrap.min.css">
+
+  <script src="fetch_api_list.js"></script>
+
 
 </body>
 </html>
