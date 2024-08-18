@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Concesionaria de Autos</title>
+</head>
+<body class="container mt-5">
+    <h1 class="text-center mb-4">Concesionaria de Autos</h1>
+    
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="mb-3">
+                <h3>Precios sin Descuento:</h3>
+                <ul>
+                    <li>Ford Ka 2016: $10.700.000</li>
+                    <li>Ford Fiesta 2019: $15.350.000</li>
+                    <li>Ford Focus: $18.500.000</li>
+                </ul>
+            </div>
+            <div class="mb-3">
+                <label for="vehiculo" class="form-label">Seleccionar el vehículo:</label>
+                <select id="vehiculo" class="form-select">
+                    <option value="ford_ka">Ford Ka 2016</option>
+                    <option value="ford_fiesta">Ford Fiesta 2019</option>
+                    <option value="ford_focus">Ford Focus</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" onclick="calcularDescuento()">Calcular Precio con Descuento</button>
+
+            <div class="mt-4">
+                <h1 id="preciofinal" class="text-center"></h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
